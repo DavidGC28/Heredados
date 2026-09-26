@@ -20,4 +20,10 @@ public class Hijo extends Padre  {
 		this.juguetes = juguetes;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "Hijo [juguetes=" + juguetes + ", virtudes=" + getVirtudes() + ", defectos=" + getDefectos() + "]";
+	}
+	
 }
