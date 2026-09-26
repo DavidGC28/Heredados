@@ -6,6 +6,7 @@ public class Padre {
     private int defectos;
     private int virtudes;
     private int juguetes;
+    private String nombre;
     private double totalAhorrado;
 
     
@@ -23,7 +24,17 @@ public class Padre {
         this.defectos = defectos;
     }
 
-    public int getVirtudes() {
+    public String getNombre() {
+		return nombre;
+	}
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+	public int getVirtudes() {
         return virtudes;
     }
 
@@ -63,14 +74,18 @@ public class Padre {
     	totalAhorrado += monto;
     }
 
+    public void Nombre (String nombre) {
+    	 System.out.println("Milton");
+    }
+
 
 	@Override
 	public String toString() {
-		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes + ", juguetes=" + juguetes + ", totalAhorrado="
-				+ totalAhorrado + ", getDefectos()=" + getDefectos() + ", getVirtudes()=" + getVirtudes()
-				+ ", getJuguetes()=" + getJuguetes() + ", getTotalAhorrado()=" + getTotalAhorrado() + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes + ", juguetes=" + juguetes + ", nombre="
+				+ nombre + ", totalAhorrado=" + totalAhorrado + "]";
 	}
+
+	
 
   
 }
