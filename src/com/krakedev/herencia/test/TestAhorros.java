@@ -19,16 +19,16 @@ Padre padre = new Padre (5,2);
 		
 Hija hija = new Hija (5,2);
 		
-		hija.ahorrar(100.0);
-		hija.ahorrar(200.0);
+		hija.ahorrar(1000.0);
+		hija.ahorrar(2000.0);
 		
 		System.out.println("===Ahorros de Hija===");
 		System.out.println("Total Ahorrado: $" + hija.getTotalAhorrado());
 		
 Hijo hijo = new Hijo (5,2, 4);
 		
-		hijo.ahorrar(100.0);
-		hijo.ahorrar(20.0);
+		hijo.ahorrar(1000.0);
+		hijo.ahorrar(2000.0);
 		
 		System.out.println("===Ahorros de Jijo===");
 		System.out.println("Total Ahorrado: $" + hijo.getTotalAhorrado());

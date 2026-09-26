@@ -26,4 +26,9 @@ public class Hijo extends Padre  {
 		return "Hijo [juguetes=" + juguetes + ", virtudes=" + getVirtudes() + ", defectos=" + getDefectos() + "]";
 	}
 	
+
+	@Override
+	public void ahorrar (double monto) {
+		super.ahorrar(monto*0.5);
+	}
 }
